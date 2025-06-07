@@ -1,8 +1,6 @@
-
-
-function UserRow({type, value, myStyle}){
+function UserRow({type, value, myStyle}) {
     let s = ""
-    if (myStyle === "red"){
+    if (myStyle === "red") {
         s = "bg-blue-100 text-red-900"
     }
     return (
@@ -20,10 +18,13 @@ function User({name, mail, age, hobbies}) {
             <UserRow type="Mail" value={mail}/>
             {age && <UserRow type="Age" value={age}/>}
             <ul>
-            {hobbies && hobbies.map((item, index) => {
-                    return (<li key={index}> Hobby {index+1}: {item} </li>)
-                }
-            )}
+                {hobbies && hobbies.map((item, index) => {
+                        return (<>
+                            <li key={index}> Hobby {index + 1}: {item} </li>
+                            <p>---</p>
+                        </>)
+                    }
+                )}
             </ul>
         </div>
     )
