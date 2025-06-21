@@ -10,7 +10,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <ol>
           <li className={"underline"}><Link href="/contact">Page Contact</Link></li>
-          <li><Link href="/contact">Page Contact</Link></li>
+          <li className={"underline font-bold"}><a href="/contact">Page Contact</a></li>
           <li><Link href="/contact">Page Contact</Link></li>
         </ol>
 
