@@ -1,12 +1,14 @@
 "use client"
 
 import {useState, useEffect} from 'react'
+import {getOneUser} from "@/app/services/users";
 
 
 function Home() {
 
     useEffect(() => {
         console.log(`yoyoyo je suis monté`);
+        getOneUser();
 
         // Executé quand le composant va être détruit :
         return () => {
