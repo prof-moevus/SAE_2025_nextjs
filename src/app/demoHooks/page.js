@@ -23,7 +23,7 @@ function Home() {
 }
 
 
-export default function demoHook() {
+export default function DemoHook() {
 
     const [counter, setCounter] = useState(null)
     const [msg, setMsg] = useState(null)
